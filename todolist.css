@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main__title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* CSS input task */
+#task{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    outline: none;
+}
+
+/* CSS button add */
+#add__task{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+/* Style todolist */
+#todolist{
+    list-style: none;
+}
+
+.list__item{
+    width: 300px;
+    height: 50px;   
+    line-height: 50px;
+    background-color: #eee;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+
+/* item odd fill background color other */
+.list__item:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+.list__item:hover{
+    background-color: #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#todolist .checked{
+    text-decoration: line-through;
+    background-color: #888;
+    transition: 0.5s;
+}
+
+
+/* Button checked */
+
+/* .button{
+    background-color: inherit;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+    transform: translateY(25%);
+} */
+
+.button__remove{
+    background-color: inherit;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    transform: translateY(50%);
+}
+
+.fa-trash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) translateY(-50%);
+}
+
+/* .button__checked::before {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0px 2px 2px 0px;
+    border-color: #000;
+} */
